@@ -8,6 +8,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+/**
+ * Autores: Juan Mateo Quisilema, Sebastián Ramos
+ */
+
 public class Main {
 
     public static void main(String[] args) {

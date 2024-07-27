@@ -43,6 +43,33 @@ public class Ordenacion {
     }
 
     // Método Selección
+    /*
+     * ALGORITMO Selección
+ENTRADA: Un arreglo de enteros arr[] de tamaño n
+SALIDA: El arreglo arr[] ordenado en orden ascendente
+
+1. PARA i DESDE 0 HASTA n-2 HACER
+   1.1. Inicializar min_idx con el valor de i
+        min_idx <- i
+        
+   1.2. PARA j DESDE i+1 HASTA n-1 HACER
+        1.2.1. SI el valor de arr[j] es menor que el valor de arr[min_idx], ENTONCES
+               SI arr[j] < arr[min_idx] ENTONCES
+                  Actualizar min_idx para que sea igual a j
+                  min_idx <- j
+               FIN SI
+        FIN PARA
+        
+   1.3. SI min_idx es diferente de i, ENTONCES
+        SI min_idx ≠ i ENTONCES
+           Intercambiar los valores de arr[min_idx] y arr[i]
+           temp <- arr[min_idx]
+           arr[min_idx] <- arr[i]
+           arr[i] <- temp
+        FIN SI
+FIN PARA
+
+     */
     public static void seleccion(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
