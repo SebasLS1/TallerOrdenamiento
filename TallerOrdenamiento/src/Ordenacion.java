@@ -1,5 +1,21 @@
 public class Ordenacion {
 
+    /**
+     *
+     * @param arr
+     * ordenacion_burbuja(arreglo)
+     *   n <- longitud(arreglo)
+     *   para i <- 0 hasta n - 2 hacer
+     *     para j <- 0 hasta n - 2 - i hacer
+     *       si arreglo[j] > arreglo[j + 1] entonces
+     *         temp <- arreglo[j]
+     *         arreglo[j] <- arreglo[j + 1]
+     *         arreglo[j + 1] <- temp
+     *       fin si
+     *     fin para
+     *   fin para
+     * fin función
+     */
     public static void burbujaMenorMayor(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
@@ -14,6 +30,22 @@ public class Ordenacion {
         }
     }
 
+    /**
+     *
+     * @param arr
+     * ordenacion_burbuja_descendente(arreglo)
+     *   n <- longitud(arreglo)
+     *   para i <- 0 hasta n - 2 hacer
+     *     para j <- 0 hasta n - 2 - i hacer
+     *       si arreglo[j] < arreglo[j + 1] entonces
+     *         temp <- arreglo[j]
+     *         arreglo[j] <- arreglo[j + 1]
+     *         arreglo[j + 1] <- temp
+     *       fin si
+     *     fin para
+     *   fin para
+     * fin función
+     */
     public static void burbujaMayorMenor(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
@@ -29,6 +61,22 @@ public class Ordenacion {
     }
 
     // Método Inserción
+
+    /**
+     * @param arr
+     * ordenacion_insercion_descendente(arreglo)
+     *   n <- longitud(arreglo)
+     *   para i <- 1 hasta n - 1 hacer
+     *     clave <- arreglo[i]
+     *     j <- i - 1
+     *     mientras j >= 0 y arreglo[j] < clave hacer
+     *       arreglo[j + 1] <- arreglo[j]
+     *       j <- j - 1
+     *     fin mientras
+     *     arreglo[j + 1] <- clave
+     *   fin para
+     * fin función
+     */
     public static void insercion(int[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; i++) {
@@ -42,7 +90,22 @@ public class Ordenacion {
         }
     }
 
-    // Método Selección
+    // Método Selección Algoritmo
+
+    /**
+     * ordenacion_insercion(arreglo)
+     *   n <- longitud(arreglo)
+     *   para i <- 1 hasta n - 1 hacer
+     *     clave <- arreglo[i]
+     *     j <- i - 1
+     *     mientras j >= 0 y arreglo[j] > clave hacer
+     *       arreglo[j + 1] <- arreglo[j]
+     *       j <- j - 1
+     *     fin mientras
+     *     arreglo[j + 1] <- clave
+     *   fin para
+     * fin función
+     */
     /*
      * ALGORITMO Selección
 ENTRADA: Un arreglo de enteros arr[] de tamaño n
